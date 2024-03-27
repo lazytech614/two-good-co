@@ -1,0 +1,641 @@
+@font-face {
+    font-family: "futura now headline";
+    src: url("./fonts/FuturaNowHeadline.ttf");
+}
+
+@font-face {
+    font-family: "futura now headline black";
+    src: url("./fonts/FuturaNowHeadlineBlack.ttf");
+}
+
+@font-face {
+    font-family: "helvatica";
+    src: url("./fonts/helveticanowtext-black-demo.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    padding: 2vw 1vw;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav .left{
+    height: 100px;
+    width: 55%;
+    padding-top: 1.5vw;
+}
+
+.nav .left h1{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-family: "futura now headline black";
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.nav .right{
+    height: 100%;
+    width: 45%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.8vw;
+    font-family: "futura now headline";
+    text-transform: uppercase;
+}
+
+.nav .right i{
+    font-size: 1.2vw;
+}
+
+.nav .right .icon-container{
+    height: 40px;
+    width: 120px;
+    margin-top: -5px;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cursor{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #F5DFCF;
+    position: fixed;
+    opacity: 0;
+}
+
+.main{
+    position: relative;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding: 0 1vw;
+    padding-top: 24vh;
+    position: relative;
+}
+
+.page1 #tag{
+    text-transform: uppercase;
+    font-size: 15.6vw;
+    line-height: 14vw;
+    letter-spacing: -7px;
+    margin-bottom: 50px;
+    font-family: "futura now headline black";
+}
+
+.page1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+}
+
+.top{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1{
+    text-transform: uppercase;
+    font-size: 3.6vw;
+    margin-bottom: 20px;
+    font-family: "futura now headline black";
+}
+
+.top p{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-family: "futura now headline";
+}
+
+.top .underline{
+    height: 1.2px;
+    width: 30%;
+    background-color: black;
+}
+
+.top-content-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-content-heading h4{
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-family: "futura now headline";
+}
+
+.top-content-underline{
+    height: 1.2px;
+    width: 100%;
+    background-color: black;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content-items{
+    height: 90vh;
+    width: 32.5%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-items img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 9;
+}
+
+.main-content-items .overlay{
+    position: absolute;
+    height:50px;
+    width: 300px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    color: black;
+}
+
+.main-content-items .overlay a{
+    text-decoration: none;
+    color: black;
+}
+
+#overlay1{
+    background-color: #F5DFCF;
+}
+
+#overlay2{
+    background-color: #EDF3FF;
+}
+
+#overlay3{
+    background-color: #FFFFFF;
+}
+
+.main-content-items .overlay h6{
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    font-family: "futura now headline";
+}
+
+.main-content-items .overlay .ri-arrow-drop-right-line{
+    font-size: 2vw;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+}
+
+.text{
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-text{
+    width: 60%;
+    height: 100%;
+}
+
+.right-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.right-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.text h2{
+    font-size: 4vw;
+    line-height: 60px;
+    font-family: "futura now headline black";
+}
+
+.text p{
+    width: 65%;
+    font-size: 1.2vw;
+    font-family: "futura now headline";
+    line-height: 25px;
+}
+
+.right-text > p{
+    margin-bottom: 35px;
+}
+
+#shop-to{
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    margin-bottom: 10px;
+    font-family: "futura now headline";
+}
+
+.shop-to-underline {
+    height: 1px; 
+    width: 105px;
+    background-color: black;
+    display: block; 
+}
+
+.grid-container{
+    height: 200vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    position: relative;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+.item img{
+    height: 65%;
+    width: 65%;
+    object-fit: cover;
+    margin-bottom: 80px;
+}
+
+.item p{
+    text-transform: uppercase;
+    font-family: "futura now headline";
+    font-size: 0.9vw;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+}
+
+.infinite-scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.infinite-scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroller;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.infinite-scroller h4{
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    margin-right: 10px;
+    font-family: "futura now headline black", serif;
+    -webkit-text-stroke: 2px #4c4e49;
+    color: transparent;
+    overflow: hidden;
+}
+
+.infinite-scroller h4:hover{
+    color: #000000;
+    transition: 1.5s ease;
+    cursor: pointer;
+}
+
+.page4 .quote-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.page4 .quote{
+    width: 90%;
+}
+
+.page4 .quote h1{
+    font-size: 5vw;
+    font-family: "futura now headline black";
+    text-align: center;
+    line-height: 70px;
+}
+
+.message{
+    color: white;
+    background-color: black;
+    height: 70px;
+    width: 300px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.message p{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-family: "futura now headline";
+    transition: all ease 0.3s;
+}
+
+.quote-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.quote-content a:hover .message p{
+    opacity: 0.7;
+}
+
+.quote-content #info{
+    font-size: 1.2vw;
+    width: 300px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "futura now headline";
+}
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem{
+    height: 80vh;
+    width: 32%;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#elem1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#elem1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#elem1 h1{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: "futura now headline black";
+    margin-bottom: 30px;
+}
+
+#elem1 p{
+    font-size: 1.3vw;
+    font-family: "Roboto", sans-serif;
+    width: 70%;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+#elem1 h4{
+    text-transform: uppercase;
+    font-family: "futura now headline";
+    font-size: 0.9vw;
+    letter-spacing: 1px;
+}
+
+#elem1 .underline{
+    height: 1px;
+    width: 11vw;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 2vw;
+}
+
+.page6 h1{
+    font-size: 2.8vw;
+    text-transform: uppercase;
+    font-family: "futura now headline black";
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-underline{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.358);
+}
+
+.footer-top a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    margin-bottom: -20px;
+}
+
+.footer-top i{
+    font-size: 2vw;
+}
+
+.footer-content{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right{
+    text-align: end;
+}
+
+.footer-center{
+    padding-top: 60px;
+}
+
+.footer-center img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer-content p{
+    font-size: 1.2vw;
+    line-height: 20px;
+    font-family: "futura now headline";
+}
+
+.footer-left>p, .footer-right>p{
+    text-transform: uppercase;
+    font-family: "futura now headline black";
+    margin-bottom: 10px;
+    color: #00000073;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+    height: 20px;
+    width: 100%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy i{
+    color: rgba(0, 0, 0, 0.546);
+}
+
+.copyright p{
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-family: "futura now headline";
+    color: rgba(0, 0, 0, 0.546);
+}
+
+.copyright a{
+    text-decoration: none;
+}
+
+.footer-bottom{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bottom p{
+    width: 80%;
+    font-size: 1.2vw;
+    font-family: "futura now headline";
+    line-height: 20px;
+}
+
+@keyframes scroller {
+    0%{
+        transform: translateX(0);
+    }100%{
+        transform: translateX(-100%);
+    }
+}

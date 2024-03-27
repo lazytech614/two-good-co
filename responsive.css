@@ -1,0 +1,292 @@
+@media (max-width: 600px){
+    .page1{
+        min-height: 60vh;
+        padding: 0 4vw;
+        padding-top: 20vh;
+    }
+
+    .nav{
+        padding: 2vw 4vw;
+    }
+
+    .nav .left h1{
+        font-size: 6.2vw;
+        line-height: 23px;
+    }
+
+    .nav .right h4{
+        display: none;
+    }
+
+    .nav .right{
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .nav .right a{
+        display: none;
+    }
+
+    .nav .right .icon-container a{
+        display: initial;
+    }
+
+    .nav .right i{
+        font-size: 5vw;
+    }
+
+    .page1 #tag{
+        margin-bottom: 10px;
+        letter-spacing: -4px;
+    }
+
+    .page2{
+        padding: 0 4vw;
+    }
+
+    .top{
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top h1{
+        text-align: center;
+        font-size: 10vw;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .top p{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .top-content-heading h4{
+        text-transform: uppercase;
+        font-size: 3vw;
+        font-family: "futura now headline";
+    }
+
+    .main-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-content-items{
+        height: 70vh;
+        width: 100%;
+    }
+
+    .main-content-items .overlay h6{
+        font-size: 3vw;
+    }
+
+    .main-content-items .overlay .ri-arrow-drop-right-line{
+        font-size: 7vw;
+    }
+
+    .page3{
+        min-height: 100vh;
+        width: 100%;
+        padding: 0 4vw;
+    }
+
+    .text{
+        height: 35vh;
+        width: 100%;
+        margin-top: 40px;
+        display: block;
+    }
+
+    .left-text{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+    }
+
+    .right-text{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .text h2{
+        font-size: 7vw;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .text p{
+        width: 100%;
+        font-size: 5vw;
+        font-family: "futura now headline";
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .right-text > p{
+        margin-bottom: 30px;
+    }
+
+    #shop-to{
+        font-size: 3vw;
+    }
+
+    .grid-container{
+        height: 60vh;
+        margin-top: 100px;
+    }
+
+    .item img{
+        height: 65%;
+        width: 65%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .item p{
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .page4{
+        min-height: 60vh;
+        width: 100%;
+        padding: 0 4vw;
+        padding-top: 100px;
+    }
+
+    .page4 .top-content-heading h4{
+        font-size: 2.5vw;
+    }
+
+    .infinite-scroller h4{
+        font-size: 10vw;
+        -webkit-text-stroke: 1px #4c4e49;
+    }
+
+    .page4 .quote-content{
+        padding-top: 5px;
+        height: 40vh;
+    }
+
+    .quote{
+        margin-bottom: 30px;
+    }
+
+    .page4 .quote h1{
+        line-height: 30px;
+    }
+
+    .message{
+        height: 40px;
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .message p{
+        font-size: 2.5vw;
+    }
+
+    .quote-content #info{
+        font-size: 3.5vw;
+    }
+
+    .page5{
+        flex-direction: column;
+        padding-top: 20vw;
+    }
+
+    .elem{
+        height: 40vh;
+        width: 90%;
+    }
+
+    #elem1{
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+
+    #elem1 h1{
+        font-size: 5.5vw;
+        margin-bottom: 10px;
+    }
+
+    #elem1 p{
+        font-size: 3.3vw;
+        margin-bottom: 10px;
+    }
+
+    #elem1 h4{
+        font-size: 2.5vw;
+    }
+
+    #elem1 .underline{
+        width: 31vw;
+    }
+
+    #elem2{
+        margin-bottom: 10px;
+    }
+
+    .page6{
+        min-height: 70vh;
+        padding: 0 4vw;
+        padding-top: 20vw;
+    }
+
+    .page6 h1{
+        font-size: 3.8vw;
+    }
+
+    .footer-top a{
+        margin-bottom: -5px;
+    }
+
+    .footer-top i{
+        font-size: 5vw;
+    }
+
+    .footer-content{
+        height: 20vh;
+    }
+
+    .footer-center img{
+        height: 100px;
+    }
+
+    .footer-center{
+        padding-top: 20px;
+    }
+
+    .footer-content p{
+        font-size: 2.7vw;
+        line-height: 20px;
+    }
+
+    .copyright{
+        gap: 20px;
+    }
+
+    .copyright p{
+        font-size: 2vw;
+        color: rgba(0, 0, 0, 0.546);
+    }
+
+    .footer-bottom p{
+        width: 100%;
+        font-size: 3vw;
+        font-family: "futura now headline";
+        line-height: 20px;
+    }
+}
